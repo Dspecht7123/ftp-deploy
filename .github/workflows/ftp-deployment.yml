@@ -15,7 +15,7 @@ jobs:
    - name: FTP-Deploy-Action
      uses: SamKirkland/FTP-Deploy-Action@4.1.0
      with:
-       server: http://dev.kunden.daniel-hoover.de
+       server: dev.kunden.daniel-hoover.de
        server-dir: html/specht/
-       username: F15172424241
-       password: ZEdWemRERXlNelE9
+       username: ${{ secrets.ftp_user }}
+       password: ${{ secrets.ftp_password }}
